@@ -1,5 +1,5 @@
 {
-  "name": "grow_templates ",
+  "name": "grow_templates",
   "version": "1.0.0",
   "description": "grow_templates ",
   "main": "index.js",
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/buccaneer33/grow_templates.git"
   },
   "keywords": [
-    "rusal_markup"
+    "grow_templatessta"
   ],
   "author": "Buccaneer",
   "license": "ISC",

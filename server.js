@@ -1,6 +1,7 @@
 var http = require('http');
 var static = require('node-static');
-var file = new static.Server('./dist', { cache: 0 });
+var template = 'template1';
+var file = new static.Server('./' + template + '/dist/dev', { cache: 0 });
 
 http.createServer(function(req, res) {
   file.serve(req, res);

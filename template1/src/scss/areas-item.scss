@@ -1,0 +1,28 @@
+.areas-item{
+    padding: 0.2rem 0.5rem 0.5rem 4.0rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include element (title) {
+        @include header4;
+        color: $section-header-color-dark;
+        padding: 0 0 1.5rem 0;
+        position: relative;
+
+        &::before{
+            position: absolute;
+            top: 0.4rem;
+            left: -2.1rem;
+            content: '';
+            border: 5px solid $section-li-bgc-color;
+        }
+    }
+    @include element (text) {
+        font-size: 0.88rem;
+        color: $section-color-dark;
+    }
+}

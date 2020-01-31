@@ -1,0 +1,35 @@
+.main-menu {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @include element (item) {
+        display: block;
+        flex-grow: 1;
+        height: 100%;
+        min-width: 4rem;
+        max-width: 16rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        font-size: 0.83rem;
+        padding: 0.1rem 0.2rem;
+        cursor: pointer;
+        color: $top-menu-nav-color;
+
+        &:hover {
+            color: $top-menu-active-color;
+        }
+    }
+}

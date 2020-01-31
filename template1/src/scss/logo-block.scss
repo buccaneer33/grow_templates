@@ -1,0 +1,24 @@
+.logo-block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @include element (logo) {
+        height: 100%;
+        width: 2.25rem;
+        background: url('../img/logo.svg') $top-menu-bgc-color;
+        background-repeat: no-repeat;
+        background-size: 2.25rem 2.25rem;
+    }
+    @include element (title) {
+        width: 83%;
+        font-family: "NoticiaText", serif;
+        font-size: 1.38rem;
+        color: $top-menu-logo-color;
+        text-transform: uppercase;
+    }
+}
