@@ -1,0 +1,59 @@
+.contacts-block{
+    background: url('../img/city2.jpg') $section-bgc-color-light;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100% 100%;
+    z-index: 1;
+
+    @include element (overlay) {
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background-color: $section-color-overlay-deep;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+    @include element (inner-overlay) {
+        width: $overlay-width;
+        height: 90%;
+        z-index: 100;
+        background-color: $section-color-overlay-inner;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: flex-start;
+        box-sizing: border-box;
+        padding-top: $section-padding;
+    }
+    @include element (inner-content) {
+        width: 50%;
+    }
+    @include element (inner-title) {
+        color: $section-color-light;
+        @include header2;
+    }
+    @include element (content) {
+        color: $section-color-light;
+        padding: $section-padding 0 0 2rem;
+    }
+    @include element (content-title) {
+        color: $section-color-light;
+        @include header4;
+        padding: 0 0 2rem 0;
+    }
+    @include element (content-text) {
+        color: $section-color-light;
+        padding: 0 0 0.2rem 0;
+        font-size: 1.1rem;
+    }
+    @include element (content-form) {
+        color: $section-color-light;
+        width: 100%;
+        height: 20rem;
+        padding-top: 1rem;
+    }
+}

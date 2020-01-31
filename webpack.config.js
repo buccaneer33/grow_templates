@@ -26,29 +26,44 @@ var clientConfig = (function webpackConfig() {
 
   config.module = {
     rules: [
-    {test: /\.scss$/,
-       include: path.resolve(__dirname, currentTemplate + '/src/scss'),
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-            use: [
-				{loader: 'css-loader', options: {url: false,minimize: PROD,sourceMap: DEV}},
-				{loader: 'postcss-loader', options:postCssLoader},
-				{loader: 'sass-loader', options: {sourceMap: DEV}}
-            ], publicPath: './' + currentTemplate + '/css/'
-          })
-      },
-
-    {test: /\.(png|jpg|gif|svg)$/,
-      use: 
-        {loader: 'file-loader', options: {name: './img/[name].[ext]',
-          context: path.resolve(__dirname, './img')}
-          }
-    },
-    {test: /\.(ttf|eot|woff|woff2)$/,
-      use:
-        {loader: "file-loader", options: {name: "[name].[ext]",
-           context: path.resolve(__dirname, './fonts')}}
-      }
+		{test: /\.scss$/,
+		   include: path.resolve(__dirname, currentTemplate + '/src/scss'),
+			use: ExtractTextPlugin.extract({
+			  fallback: "style-loader",
+				use: [
+					{loader: 'css-loader', options: {url: false,minimize: PROD,sourceMap: DEV}},
+					{loader: 'postcss-loader', options:postCssLoader},
+					{loader: 'sass-loader', options: {sourceMap: DEV}}
+				], publicPath: './' + currentTemplate + '/css/'
+			  })
+		},
+		{test: /\.(png|jpg|gif|svg|webp)$/,
+		  use: 
+			{loader: 'file-loader', options: {name: './img/[name].[ext]',
+			  context: path.resolve(__dirname, './img')}
+			  }
+		},
+		{test: /\.(ttf|eot|woff|woff2)$/,
+		  use:
+			{
+				loader: "file-loader",
+				options: {
+					name: "[name].[ext]",
+					outputPath: 'fonts/',
+					context: path.resolve(__dirname, './fonts')}
+			}
+		},
+		{test: /\.(ico)$/,
+		  use:
+			{
+				loader: "file-loader",
+				options: {
+					name: "[name].[ext]",
+					outputPath: '',
+					context: path.resolve(__dirname, './')}
+			}
+		}
+		
     ]
   }
 config.resolve = {};

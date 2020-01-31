@@ -1,19 +1,20 @@
 @import "mixins.scss";
-@import "../../assets/fonts/fonts.css";
 @import "variables.scss";
-
+@import "fonts.scss";
 @import "main-style.scss";
-@import "header.scss";
-@import "action-panel.scss";
-@import "content-wrapper.scss";
-@import "navigation.scss";
-@import "content.scss";
-@import "right-menu.scss";
-@import "information.scss";
-@import "error-message.scss";
-@import "popup.scss";
-
+@import "main.scss";
+@import "nav.scss";
 @import "content-section.scss";
-@import "styles.css";
-@import "deeppurple-amber.css";
-@import "my-additional-styles.scss";
+@import "logo-block.scss";
+@import "main-menu.scss";
+@import "home-block.scss";
+@import "areas-block.scss";
+@import "areas-item.scss";
+@import "vision-block.scss";
+@import "photo-block.scss";
+@import "attorneys-block.scss";
+@import "persons.scss";
+@import "contacts-block.scss";
+@import "contact-form.scss";
+@import "back-to-top.scss";
+@import "footer.scss";
