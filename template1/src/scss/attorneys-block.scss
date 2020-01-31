@@ -1,0 +1,38 @@
+.attorneys-block{
+    background-color: $section-bgc-color-light;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    @include element (overlay) {
+        width: 100%;
+        background-color: $section-color-overlay-ligth;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 5rem 0;
+    }
+    @include element (content) {
+        width: 100%;
+        height: 100%;
+        max-width: $wrapper-width;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    @include element (title) {
+        @include header2;
+        color: $section-color-dark;
+        padding-bottom: 4rem;
+    }
+    @include element (person-block) {
+        width: 100%;
+        height: 80%;
+    }
+}

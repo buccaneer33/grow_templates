@@ -1,0 +1,49 @@
+.areas-block{
+    background-color: $section-bgc-color-light;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    @include element (overlay) {
+        width: $overlay-width;
+        background-color: $section-color-overlay-ligth;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        padding: $section-padding 0;
+    }
+    @include element (overlay-content) {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    @include element (title) {
+        @include header1;
+        color: $section-color-dark;
+
+        @include modif(subtitle) {
+            @include header3;
+            color: $section-color-dark;
+        }
+    }
+    @include element (content) {
+        width: 46%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: $section-padding 0;
+    }
+    @include element (content-item) {
+        width: 48%;
+    }
+}

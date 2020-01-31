@@ -1,0 +1,28 @@
+.vision-block {
+    background-color: $section-bgc-color-dark;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    color: $section-color-light;
+
+    @include element (content) {
+        width: $wrapper-width;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        padding: $section-padding 0;
+    }
+    @include element (title) {
+        @include header2;
+        padding-bottom: $section-padding;
+    }
+    @include element (text) {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+        text-align: center;
+    }
+}

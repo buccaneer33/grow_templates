@@ -1,0 +1,42 @@
+.home-block {
+    background: url('../img/city.jpg') $section-bgc-color-dark;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100% 100%;
+
+    @include element (overlay) {
+        height: 100%;
+        width: $overlay-width;
+        background-color: $section-color-overlay;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    @include element (content) {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    @include element (title) {
+        @include header1;
+        color: $section-color-light;
+
+        @include modif(subtitle) {
+            @include header3;
+            color: $section-color-light;
+        }
+    }
+    @include element (slogan) {
+        @include header4;
+        color: $section-color-light;
+        margin-top: 1rem;
+    }
+}

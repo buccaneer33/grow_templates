@@ -1,27 +1,25 @@
-$border: 1px solid #DBDFE3;
+$body-bgc-color: #FFFFFF;
 
-$main-text: #141414;
-$active-link: #47A3D5;
-$invalid-text-color: rgba(205, 89, 89, 1);
+$top-menu-bgc-color: #FFFFFF;
+$top-menu-logo-color: #00305B;
+$top-menu-nav-color: #0D0D0D;
+$top-menu-active-color: rgb(15, 76, 133);;
 
-$active-background-color: rgba(8, 137, 208, .2);
-$hover-background-color: #EBEBEB;
-$invalid-background-color: rgba(205, 89, 89, .2);
-$main-background-color: #FFFFFF;
+$section-color-light: rgb(255, 255, 255);
+$section-color-dark: rgb(15, 76, 133);
+$section-color-overlay: rgba(15,76,133,0.6);
+$section-color-overlay-ligth: rgba(15,76,133,0.07);
+$section-color-overlay-white: rgba(250,250,250,0.25);
+$section-color-overlay-deep: rgba(15, 76, 133, 0.8);
+$section-color-overlay-inner: rgba(8, 38, 77, 0.5);
+$section-header-color-dark: rgb(0, 48, 91);
 
+$section-bgc-color-light: #FAFAFA;
+$section-bgc-color-dark: rgb(0, 48, 91);
+$section-li-bgc-color: #41B7C4;
 
-$navigation-left-indent: 40px;
-
-$section-left-indent: 40px;
-$section-left-form-indent: 16px;
-$section-top-form-indent: 24px;
-$section-left-radio-indent: 30px;
-
-$information-component-indent: 16px;
-
-$table-width: 700px;
-$popup-width: 75%;
-$popup-height: 90%;
-
-$header-height: 60px;
-$action-panel-height: 48px;
+$wrapper-width: 975px;
+$overlay-width: 45%;
+$left-block-size: 340px;
+$right-block-size: 630px;
+$section-padding: 5rem;
