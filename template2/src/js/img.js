@@ -1,0 +1,9 @@
+'use strict';
+/*import '../../assets/icons/favicon.ico';
+import '../../assets/icons/logo.svg';
+import '../../assets/img/city.jpg';
+import '../../assets/img/company.jpg';
+import '../../assets/img/photo1.webp';
+import '../../assets/img/photo2.webp';
+import '../../assets/img/photo3.webp';
+import '../../assets/img/city2.jpg';*/

@@ -1,0 +1,57 @@
+@mixin element ($element) {
+    &__#{$element} {
+        @content;
+    };
+};
+
+@mixin modif ($modif) {
+    &--#{$modif} {
+        @content;
+    };
+};
+
+@mixin header1 {
+    font-family: 'Raleway-Medium';
+    margin: 0;
+    padding: 0;
+    font-size: 2.6rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+@mixin header2 {
+    font-family: "Raleway";
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    font-size: 2.6rem;
+    line-height: 2.8rem;
+    font-weight: 300;
+}
+
+@mixin header3 {
+    font-family: "Raleway";
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    font-size: 2.6rem;
+    line-height: 2.8rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+}
+
+@mixin header4 {
+    font-family: "Raleway-Medium";
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+@mixin block-wrapper {
+    max-width: $wrapper-width;
+    width: 100%;
+}
