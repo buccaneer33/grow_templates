@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title><%= htmlWebpackPlugin.options.title %></title>
+        <!--[if lt IE 10]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__info-block header-info">
+                <div class="header__wrapper">
+                    <div class="header-info__phone">
+                        <i class="fa fa-phone fa-rotate-90 header-info__icon" aria-hidden="true"></i>
+                        <a href="#">(12) 345 67890</a>
+                    </div>
+                    <div class="header-info__email">
+                        <i class="fa fa-envelope header-info__icon" aria-hidden="true"></i>
+                        <a href = "#">info.colorlib@mail.com</a>
+                    </div>
+                    <div class="header-info__lang-toggle">
+                        <div class="lang-toggle">
+                            <i class="lang-toggle__flag"></i>
+                            <span class="lang-toggle__toggle">en</span>
+                            <i class="fa fa-angle-down lang-toggle__angle"></i>
+                        </div>
+                    </div>
+                    <div class="header-info__booking">
+                        <button class="header-info__button">booking now</button>
+                    </div>
+                    <div class="header-info__icon-block">
+                        <a class="header-info__icon-link" href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="header-info__icon-link" href="#">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a class="header-info__icon-link" href="#">
+                            <i class="fab fa-tripadvisor" aria-hidden="true"></i>
+                        </a>
+                        <a class="header-info__icon-link" href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__nav-block">
+                <div class="header__wrapper">
+                    <div class="nav-block">
+                        <div class="nav-block__logo">
+                            Sona<small class="nav-block__logo--dot">.</small>
+                        </div>
+                        <div class="nav-block__search">
+                            <i class="fas fa-search fa-rotate-90 nav-block__search-icon"></i>
+                        </div>
+                        <nav class="nav-block__nav navigation">
+                            <ol class="navigation__list">
+                                <li class="navigation__item"><a class="navigation__link">Contact</a></li>
+                                <li class="navigation__item"><a class="navigation__link">News</a></li>
+                                <li class="navigation__item"><a class="navigation__link">Rooms</a></li>
+                                <li class="navigation__item"><a class="navigation__link">What we do</a></li>
+                                <li class="navigation__item"><a class="navigation__link">About Us</a></li>
+                                <li class="navigation__item"><a class="navigation__link">Home</a></li>
+                            </ol>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="section section--home">
+                <div class="section__wrapper">
+                    <div class="home">
+                        <div class="home__header-block">
+                            <h1 class="home__header">Sona A Luxury Hotel</h1>
+                            <h4 class="home__slogan">Here are the best hotel booking sites, including recommendations for international travel and for finding low-priced hotel rooms.</h4>
+                            <button class="home__discover">DISCOVER NOW</button>
+                        </div>
+                        <div class="home__booking-block">
+                            <div class="booking-form">
+                                <h2 class="booking-form__title">Booking Your Hotel</h2>
+                                <div class="booking-form__input-block">
+                                    <label class="booking-form__label">Check In:</label>
+                                    <input class="booking-form__input" type="date" />
+                                </div>
+                                <div class="booking-form__input-block">
+                                    <label class="booking-form__label">Check Out:</label>
+                                    <input class="booking-form__input" type="date" />
+                                </div>
+                                <div class="booking-form__input-block">
+                                    <label class="booking-form__label">Guests:</label>
+                                    <div class="booking-form__select-block">
+                                        <select class="booking-form__select" type="date">
+                                            <option class="booking-form__option">1 Adult</option>
+                                            <option class="booking-form__option">2 Adult</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="booking-form__input-block">
+                                    <label class="booking-form__label">Room:</label>
+                                    <div class="booking-form__select-block">
+                                        <select class="booking-form__select" type="date">
+                                            <option class="booking-form__option">1 Room</option>
+                                            <option class="booking-form__option">2 Room</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="booking-form__input-block">
+                                    <button class="booking-form__submit">Check Availability</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--about">
+                <div class="section__wrapper">
+                    <div class="about">
+                        <div class="about__content-block">
+                            <h4 class="about__header">ABOUT US</h4>
+                            <h2 class="about__title">Intercontinental LA Westlake Hotel</h2>
+                            <span class="about__content">Sona.com is a leading online accommodation site. We’re passionate about travel. Every day, we inspire and reach millions of travelers across 90 local websites in 41 languages.</span>
+                            <span class="about__content">So when it comes to booking the perfect hotel, vacation rental, resort, apartment, guest house, or tree house, we’ve got you covered.</span>
+                            <button class="about__more">READ MORE</button>
+                        </div>
+                        <div class="about__photo-block">
+                            <img class="about__photo" src="../img/pagoda.jpg" />
+                            <img class="about__photo" src="../img/phone.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--what-we-do">
+                <div class="section__wrapper">
+                    <div class="what-we-do">
+                        <h4 class="what-we-do__header">WHAT WE DO</h4>
+                        <h2 class="what-we-do__section-title">Discover Our Services</h2>
+                        <div class="what-we-do__block">
+                            <div class="what-we-do__item">
+                                <i class="fas fa-map-marker-alt what-we-do__item-icon"></i>
+                                <h3 class="what-we-do__title">Travel Plan</h3>
+                                <div class="what-we-do__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
+                            </div>
+                            <div class="what-we-do__item">
+                                <i class="fas fa-utensils what-we-do__item-icon"></i>
+                                <h3 class="what-we-do__title">Catering Service</h3>
+                                <div class="what-we-do__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
+                            </div>
+                            <div class="what-we-do__item">
+                                <i class="fas fa-bed what-we-do__item-icon"></i>
+                                <h3 class="what-we-do__title">Babysitting</h3>
+                                <div class="what-we-do__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
+                            </div>
+                            <div class="what-we-do__item">
+                                <i class="fas fa-shower what-we-do__item-icon"></i>
+                                <h3 class="what-we-do__title">Laundry</h3>
+                                <div class="what-we-do__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
+                            </div>
+                            <div class="what-we-do__item">
+                                <i class="fas fa-clock what-we-do__item-icon"></i>
+                                <h3 class="what-we-do__title">Hire Driver</h3>
+                                <div class="what-we-do__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
+                            </div>
+                            <div class="what-we-do__item">
+                                <i class="fas fa-cocktail what-we-do__item-icon"></i>
+                                <h3 class="what-we-do__title">Bar & Drink</h3>
+                                <div class="what-we-do__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--rooms">
+                <div class="rooms">
+                    <div class="rooms__item rooms__item--double">
+                        <div class="rooms__inner-block room">
+                            <h3 class="room__title">Double Room</h3>
+                            <div class="room__info room__info--price">
+                                <span class="room__info--big">199$</span>/Pernight
+                            </div>
+                            <div class="room__info">
+                                <span class="room__info--key">Size:</span>
+                                <span class="room__info--value">30 ft</span>
+                            </div>
+                            <div class="room__info">
+                                <span class="room__info--key">Capacity:</span>
+                                <span class="room__info--value">Max persion 5</span>
+                            </div>
+                            <div class="room__info">
+                                <span class="room__info--key">Bed:</span>
+                                <span class="room__info--value">King Beds</span>
+                            </div>
+                            <div class="room__info">
+                                <span class="room__info--key">Services:</span>
+                                <span class="room__info--value">Wifi, Television, Bathroom,...</span>
+                            </div>
+                            <button class="room__more">MORE DETAILS</button>
+                        </div>
+                    </div>
+                    <div class="rooms__item rooms__item--premium">
+                        <div class="rooms__inner-block room">
+                            <h3 class="room__title">Premium King Room</h3>
+                            <div class="room__info room__info--price">
+                                <span class="room__info--big">159$</span>/Pernight
+                            </div>
+                            <div class="room__info">
+                                <span class="room__info--key">Size:</span>
+                                <span class="room__info--value">30 ft</span>
+                            </div>
+                            <div class="room__info">
+                                <span class="room__info--key">Capacity:</span>
+                                <span class="room__info--value">Max persion 5</span>
+                            </div>
+                            <div class="room__info">
+                                <span class="room__info--key">Bed:</span>
+                                <span class="room__info--value">King Beds</span>
+                            </div>
+                            <div class="room__info">
+                                <span class="room__info--key">Services:</span>
+                                <span class="room__info--value">Wifi, Television, Bathroom,...</span>
+                            </div>
+                            <button class="room__more">MORE DETAILS</button>
+                        </div>
+                    </div>
+                    <div class="rooms__item rooms__item--delux">
+                        <div class="rooms__inner-block room">
+                            <h3 class="room__title">Deluxe Room</h3>
+                            <div class="room__info room__info--price">
+                                <span class="room__info--big">198$</span>/Pernight
+                            </div>
+                            <div class="room__info">
+                                <span class="room__info--key">Size:</span>
+                                <span class="room__info--value">30 ft</span>
+                            </div>
+                            <div class="room__info">
+                                <span class="room__info--key">Capacity:</span>
+                                <span class="room__info--value">Max persion 5</span>
+                            </div>
+                            <div class="room__info">
+                                <span class="room__info--key">Bed:</span>
+                                <span class="room__info--value">King Beds</span>
+                            </div>
+                            <div class="room__info">
+                                <span class="room__info--key">Services:</span>
+                                <span class="room__info--value">Wifi, Television, Bathroom,...</span>
+                            </div>
+                            <button class="room__more">MORE DETAILS</button>
+                        </div>
+                    </div>
+                    <div class="rooms__item rooms__item--family">
+                        <div class="rooms__inner-block room">
+                            <h3 class="room__title">Family Room</h3>
+                            <div class="room__info room__info--price">
+                                <span class="room__info--big">299$</span>/Pernight
+                            </div>
+                            <div class="room__info">
+                                <span class="room__info--key">Size:</span>
+                                <span class="room__info--value">30 ft</span>
+                            </div>
+                            <div class="room__info">
+                                <span class="room__info--key">Capacity:</span>
+                                <span class="room__info--value">Max persion 5</span>
+                            </div>
+                            <div class="room__info">
+                                <span class="room__info--key">Bed:</span>
+                                <span class="room__info--value">King Beds</span>
+                            </div>
+                            <div class="room__info">
+                                <span class="room__info--key">Services:</span>
+                                <span class="room__info--value">Wifi, Television, Bathroom,...</span>
+                            </div>
+                            <button class="room__more">MORE DETAILS</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--news">
+                <div class="section__wrapper">
+                    <div class="news">
+                        <h4 class="news__header">HOTEL NEWS</h4>
+                        <h2 class="news__section-title">Our Blog & Event</h2>
+                        <div class="news__block">
+                            <div class="news__item news__item--first">
+                                <div class="news__title">
+                                     <h3 class="news__label">TRAVEL TRIP</h3>
+                                </div>
+                                <p class="news__content">Tremblant In Canada</p>
+                                <p class="news__date">15TH APRIL, 2019</p>
+                            </div>
+                            <div class="news__item news__item--second">
+                                <div class="news__title">
+                                    <h3 class="news__label">CAMPING</h3>
+                               </div>
+                                <p class="news__content">Choosing A Static Caravan</p>
+                                <p class="news__date">15TH APRIL, 2019</p>
+                            </div>
+                            <div class="news__item news__item--third">
+                                <div class="news__title">
+                                    <h3 class="news__label">EVENT</h3>
+                               </div>
+                                <p class="news__content">Copper Canyon</p>
+                                <p class="news__date">15TH APRIL, 2019</p>
+                            </div>
+                            <div class="news__item news__item--thirth news__item--big">
+                                <div class="news__title">
+                                    <h3 class="news__label">EVENT</h3>
+                               </div>
+                                <p class="news__content">Copper Canyon</p>
+                                <p class="news__date">15TH APRIL, 2019</p>
+                            </div>
+                            <div class="news__item news__item--five">
+                                <div class="news__title">
+                                    <h3 class="news__label">EVENT</h3>
+                               </div>
+                                <p class="news__content">Copper Canyon</p>
+                                <p class="news__date">15TH APRIL, 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__info">
+                <div class="infoblock">
+                    <div class="infoblock__social">
+                        <div class="social">
+                            <div class="social__title">Sona
+                                <small class="social__title--dot">.</small>
+                            </div>
+                            <div class="social__inspire">
+                                <p>We inspire and reach millions of travelers across 90 local websites</p>
+                            </div>
+                            <div class="social__icons-block">
+                                <a href="#" class="social__icons social__icons--face">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social__icons social__icons--twit">
+                                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="social__icons social__icons--owl">
+                                    <i class="fab fa-tripadvisor" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="social__icons social__icons--insta">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social__icons social__icons--tube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infoblock__contacts">
+                        <div class="contacts">
+                            <div class="contacts__title">CONTACT US</div>
+                            <div class="contacts__content">
+                                <p>(12) 345 67890</p>
+                                <p>info.colorlib@gmail.com</p>
+                                <p>856 Cordia Extension Apt. 356, Lake,</p>
+                                <p>United State</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infoblock__latest">
+                        <div class="latest">
+                            <div class="latest__title">NEW LATEST</div>
+                            <div class="latest__content">
+                                <p>Get the latest updates and offers.</p>
+                            </div>
+                            <div class="latest__form">
+                                <input class="latest__input" type="email" placeholder="Email" /> 
+                                <button class="latest__btn">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="rights-block">
+                    <div class="rights-block__links-block">
+                        <a href="#" class="rights-block__link">Contact</a>
+                        <a href="#" class="rights-block__link">Terms of use</a>
+                        <a href="#" class="rights-block__link">Privacy</a>
+                        <a href="#" class="rights-block__link">Environmental Policy</a>
+                    </div>
+                    <div class="rights-block__copyrights">
+                        Copyright ©2020 All rights reserved
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

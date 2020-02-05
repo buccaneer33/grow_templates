@@ -1,0 +1,45 @@
+.room{
+    height: 100%;
+    width: 100%;
+    padding: 25% 10%;
+    box-sizing: border-box;
+    //background-color: rgb(187, 46, 46);
+
+    @include element (title) {
+        @include header3;
+        color: $section-color-light;
+        font-size: 2rem;
+        padding: 1% 1%;
+    }
+    @include element (info) {
+        color: $section-color-light;
+        @include header4;
+        font-size: 1.1rem;
+        padding: 1% 1%;
+        display: block;
+        height: 7%;
+
+        @include modif (price) {
+            padding: 2% 0 12%;
+        }
+        @include modif (big) {
+            color: $body-color-brown;
+            font-size: 1.7rem;
+        }
+        @include modif (key) {
+            width: 31%;
+            float: left;
+            display: inline-block;
+        }
+        @include modif (value) {
+            float: left;
+            display: inline-block;
+        }
+    }
+    @include element (more) {
+        @include button;
+        border-bottom: 2px solid $section-color-light;
+        padding: 0.5rem 0 0.5rem 0;
+        margin-top: 2.0rem;
+    }
+}

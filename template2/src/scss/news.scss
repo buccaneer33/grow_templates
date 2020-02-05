@@ -1,0 +1,98 @@
+.news{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 5% 0;
+
+    @include element (header) {
+        @include header5;
+        color: $body-color-brown;
+        padding: 2% 1% 0.5%;
+        box-sizing: border-box;
+    }
+    @include element (section-title) {
+        @include header2;
+        color: $body-color-dark;
+        padding: 1% 1% 5%;
+        box-sizing: border-box;
+        font-size: 2.75rem;
+        line-height: 3.6rem;
+    }
+    @include element (block) {
+        display: block;
+        height: 70%;
+    }
+    @include element (item) {
+        display: block;
+        float: left;
+        height: 23rem;
+        width: 23rem;
+        padding: 19% 2% 2% 2%;
+        box-sizing: border-box;
+        background-color: $body-bgc-color;
+        box-shadow: 0 0.2rem 1rem 0.1rem $section-shadow-color;
+        text-align: left;
+        margin: 1%;
+
+        @include modif (big) {
+            width: 47.7rem;
+        }
+        @include modif (first) {
+            background: url('../img/canada.jpg');
+        }
+        @include modif (second) {
+            background: url('../img/tropic.jpg');
+        }
+        @include modif (third) {
+            background: url('../img/nature.jpg');
+        }
+        @include modif (thirth) {
+            background: url('../img/umbrellas.jpg');
+        }
+        @include modif (five) {
+            background: url('../img/water.jpg');
+        }
+    }
+    @include element (title) {
+        box-sizing: border-box;
+        display: block;
+    }
+    @include element (label) {
+        @include header5;
+        color: $section-color-light;
+        background-color: $body-color-brown;
+        padding: 0.2rem 0.5rem;
+        box-sizing: border-box;
+        display: inline;
+        font-size: 0.8rem;
+    }
+    @include element (content) {
+        color: $section-color-light;
+        padding: 0.1rem 0;
+        box-sizing: border-box;
+        font-size: 1.5rem;
+        font-family: "Lora-Regular", serif;
+    }
+    @include element (date) {
+        color: $section-color-light;
+        padding: 0.1rem 0.5rem 0.1rem 1.3rem;
+        box-sizing: border-box;
+        font-family: "Cabin-Medium", sans-serif;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        position: relative;
+        letter-spacing: 0.1rem;
+
+        &:before{
+            font-family: "Font Awesome 5 Free";
+            content: '\f017';
+            color: $section-color-light;
+            position: absolute;
+            left: 0rem;
+            top: 0.2rem;
+            font-size: 0.9rem;
+        }
+    }
+
+}
