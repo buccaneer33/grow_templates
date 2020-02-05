@@ -1,0 +1,77 @@
+.what-we-do{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 5% 0;
+
+    @include element (header) {
+        @include header5;
+        color: $body-color-brown;
+        padding: 2% 1% 0.5%;
+        box-sizing: border-box;
+    }
+    @include element (section-title) {
+        @include header2;
+        color: $body-color-dark;
+        padding: 1% 1% 5%;
+        box-sizing: border-box;
+        font-size: 2.75rem;
+        line-height: 3.6rem;
+    }
+    @include element (block) {
+        display: block;
+        height: 70%;
+    }
+    @include element (item) {
+        display: block;
+        float: left;
+        height: 15rem;
+        width: 23rem;
+        margin: 1%;
+        padding: 2% 2%;
+        box-sizing: border-box;
+        background-color: $body-bgc-color;
+        box-shadow: 0 0.2rem 1rem 0.1rem $section-shadow-color;
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:hover {
+            background-color: $body-color-brown;
+            color: $body-bgc-color;
+            transition: 0.2s;
+        }
+        &:hover > .what-we-do__item-icon{
+            color: $body-bgc-color;
+            transition: 0.2s;
+        }
+        &:hover .what-we-do__title{
+            color: $body-bgc-color;
+            transition: 0.2s;
+        }
+        &:hover .what-we-do__content{
+            color: $body-bgc-color;
+            transition: 0.2s;
+        }
+    }
+    @include element (item-icon) {
+        display: block;
+        color: $body-color-brown;
+        font-size: 35px;
+        padding: 3% 0;
+        transition: 0.2s;
+    }
+    @include element (title) {
+        @include header3;
+        font-size: 1.4rem;
+        padding: 3% 0;
+        transition: 0.2s;
+        color: $body-color-dark;
+    }
+    @include element (content) {
+        padding: 3% 0;
+        font-size: 0.88rem;
+        transition: 0.2s;
+        color: $section-color-label;
+    }
+}

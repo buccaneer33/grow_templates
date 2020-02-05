@@ -1,0 +1,15 @@
+.footer{
+    width: 100%;
+    height: 23.8rem;
+    background-color: $footer-bgc-dark;
+
+    @include element (info) {
+        width: 100%;
+        height: 70%;
+    }
+    @include element (copyright) {
+        width: 100%;
+        height: 30%;
+        background-color: $footer-bgc-copyrigts;
+    }
+}

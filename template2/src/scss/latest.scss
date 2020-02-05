@@ -1,0 +1,38 @@
+.latest{
+    height: 100%;
+    width: 100%;
+
+    @include element (title) {
+        @include header5;
+        color: $body-color-brown;
+        padding: 2% 1% 0.5%;
+        box-sizing: border-box;
+    }
+    @include element (content) {
+        @include footer-content;
+        padding: 0.2rem 0;
+    }
+    @include element (form) {
+
+    }
+    @include element (input) {
+        background-color: $footer-bgc-input;
+        width: 80%;
+        height: 3.2rem;
+        border: 1px solid $footer-bgc-input;
+        margin: 0;
+        padding: $input-padding;
+        box-sizing: border-box;
+        font-size: 1.1rem;
+    }
+    @include element (btn) {
+        background-color: $body-color-brown;
+        color: $section-color-light;
+        height: 3.1rem;
+        width: 3.1rem;
+        border: 1px solid $body-color-brown;
+        font-size: 1.1rem;
+        margin: 0.1rem 0 0 0;
+        box-sizing: border-box;
+    }
+}

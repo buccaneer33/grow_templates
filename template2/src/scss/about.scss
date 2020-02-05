@@ -1,0 +1,55 @@
+.about{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+    @include element (content-block) {
+        @include section-left-side;
+        width: 45%;
+        color: $section-color-light;
+        margin-bottom: 1rem;
+        padding: 5%;
+        text-align: center;
+    }
+    @include element (header) {
+        @include header5;
+        color: $body-color-brown;
+        padding: 1% 1%;
+        box-sizing: border-box;
+    }
+    @include element (title) {
+        @include header2;
+        color: $body-color-dark;
+        padding: 4% 1%;
+        box-sizing: border-box;
+        font-size: 2.75rem;
+        line-height: 3.6rem;
+    }
+    @include element (content) {
+        color: $body-color-dark;
+        padding: 2% 1%;
+        display: block;
+        box-sizing: border-box;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        font-weight: 500;
+    }
+    @include element (more) {
+        @include button;
+        margin-top: 2rem;
+        color: $body-color-dark;
+    }
+
+    @include element (photo-block) {
+        @include section-right-side;
+        width: 55%;
+        color: $section-color-light;
+        margin-bottom: 1rem;
+    }
+    @include element (photo) {
+        height: 25rem;
+        width: 19.8rem;
+        float: right;
+        padding: 8% 0% 8% 1%;
+    }
+}

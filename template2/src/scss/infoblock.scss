@@ -1,0 +1,20 @@
+.infoblock{
+    @include block-wrapper;
+    padding: 3rem 0;
+
+    @include element (social) {
+        width: 40%;
+        height: 100%;
+        float: left;
+    }
+    @include element (contacts) {
+        width: 30%;
+        height: 100%;
+        float: left;
+    }
+    @include element (latest) {
+        width: 30%;
+        height: 100%;
+        float: left;
+    }
+}

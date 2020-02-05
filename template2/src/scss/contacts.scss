@@ -1,0 +1,15 @@
+.contacts{
+    height: 100%;
+    width: 100%;
+
+    @include element (title) {
+        @include header5;
+        color: $body-color-brown;
+        padding: 2% 1% 0.5%;
+        box-sizing: border-box;
+    }
+    @include element (content) {
+        @include footer-content;
+        padding: 0.2rem 0;
+    }
+}

@@ -1,0 +1,25 @@
+.rights-block{
+    @include block-wrapper;
+    padding: 3rem 0;
+    box-sizing: border-box;
+
+
+    @include element (links-block) {
+        @include footer-content;
+        width: 40%;
+        height: 100%;
+        float: left;
+    }
+    @include element (link) {
+        padding: 0.3rem 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    @include element (copyrights) {
+        @include footer-content;
+        width: 40%;
+        height: 100%;
+        float: right;
+        text-align: right;
+    }
+}

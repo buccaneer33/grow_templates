@@ -1,0 +1,27 @@
+.home {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+    @include element (header-block) {
+        @include section-left-side;
+        padding: 25% 2%;
+    }
+    @include element (header) {
+        @include header1;
+        color: $section-color-light;
+        margin-bottom: 1rem;
+    }
+    @include element (slogan) {
+        @include header4;
+        color: $section-color-light;
+        margin-bottom: 1rem;
+    }
+    @include element (discover) {
+        @include button;
+    }
+    @include element (booking-block) {
+        @include section-right-side;
+        padding: 7% 0 4% 5%;
+    }
+}
