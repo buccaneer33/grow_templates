@@ -1,3 +1,37 @@
 .header {
-  
+    height: $header-height;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: $body-bgc-color-dark;
+
+    @include element(wrapper) {
+        @include container-wrapper;
+    }
+    @include element(logo) {
+        height: 100%;
+        padding: 2.5rem 0;
+        font-size: 2.2rem;
+    }
+    @include element(logo-link) {
+        height: 100%;
+        color: $body-color-light;
+        transition: $transition-time;
+
+        &:hover{
+            color: $nav-color-active;
+            transition: $transition-time;
+        }
+        &:first-letter{
+            color: $nav-color-active !important;
+        }
+    }
+
+    @include element(nav) {
+        height: 100%;
+        padding: 2.5rem 0;
+    }
+}
+.header__logo-link:first-letter{
+    color: $nav-color-active !important;
 }

@@ -54,4 +54,9 @@
     //color: $body-color-brown;
     letter-spacing: 2px;
 }
-
+@mixin container-wrapper {
+    width: 100%;
+    max-width: $wrapper-width;
+    height: 100%;
+    margin: 0 auto;
+}

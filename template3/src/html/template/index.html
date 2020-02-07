@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title><%= htmlWebpackPlugin.options.title %></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--[if lt IE 10]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -10,10 +11,23 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     </head>
     <body>
-        <header class="header">
-
+        <header class="header container">
+            <div class="header__wrapper row">
+                <div class="header__logo col-lg-1">
+                    <a class="header__logo-link" href="#">GOGOPO</a>
+                </div>
+                <div class="header__nav navigation col-lg-5 col-lg-offset-6 container">
+                    <ul class="row navigation__list">
+                        <li class="navigation__item">HOME</li>
+                        <li class="navigation__item">PAGES</li>
+                        <li class="navigation__item">DROPDOWN</li>
+                        <li class="navigation__item">LINK TEXT</li>
+                        <li class="navigation__item">LINK TEXT</li>
+                    </ul>
+                </div>
+            </div>
         </header>
-        <main class="main container">
+        <main class="main">
 
 
         </main>
