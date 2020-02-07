@@ -9,7 +9,7 @@ const AUTOPREFIXER = require('autoprefixer');
 const EVENT = process.env.npm_lifecycle_event || '';
 const PROD = EVENT.includes('prod');
 const DEV = EVENT.includes('dev');
-const currentTemplate = 'template2';
+const currentTemplate = 'template3';
 const pathToDist = PROD ? (currentTemplate + '/dist/prod') : (currentTemplate + '/dist/dev');
 const postCssLoader = PROD ? ({plugins: [AUTOPREFIXER({browsers:['ie >= 8', 'last 12 version']})],sourceMap: false}) : ({sourceMap: true});
 

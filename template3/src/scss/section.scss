@@ -2,38 +2,5 @@
     width: 100%;
     z-index: 10;
 
-    @include element (wrapper) {
-        @include block-wrapper;
-        height: 100%;
-    }
-    @include modif (home) {
-        height: 55vh;
-        min-height: 50rem;
-        background-color: transparent;
-    }
-    @include modif (about) {
-        height: 35vh;
-        min-height: 35rem;
-        background-color: $body-bgc-color;
-        border-bottom: 1px solid $header-border-color;
-    }
-    @include modif (what-we-do) {
-        height: 50vh;
-        min-height: 55rem;
-        background-color: $body-bgc-color;
-    }
-    @include modif (rooms) {
-        @include block-wrapper;
-        height: 37.5rem;
-        min-height: 37.5rem;
-        background-color: $body-bgc-color;
-        max-width: 100%;
-        padding: 0;
-    }
-    @include modif (news) {
-        height: 72vh;
-        min-height: 72rem;
-        background-color: $body-bgc-color;
-        // background-color: rgb(181, 194, 124);
-    }
+
 }

@@ -1,6 +1,4 @@
 'use strict';
-/*import '../../assets/fonts/Cabin-Medium.ttf';
-import '../../assets/fonts/Lora-Regular.ttf';*/
 // awesome
 import '../../assets/fonts/awesome/fa-brands-400.eot';
 import '../../assets/fonts/awesome/fa-brands-400.ttf';
