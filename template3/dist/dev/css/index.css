@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*@font-face {
     font-family: "Cabin-Medium";
     src: url("../fonts/Cabin-Medium.ttf");
@@ -6,12 +7,51 @@
     font-family: "Lora-Regular";
     src: url("../fonts/Lora-Regular.ttf");
 }*/
+a {
+  color: inherit;
+  text-decoration: none; }
+
+a:focus, a:hover {
+  color: inherit;
+  text-decoration: none; }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none !important; }
+
+.btn {
+  color: #FFF;
+  background-color: #15AD72;
+  transition: 0.2s;
+  border-radius: 0;
+  padding: 1rem 1.8rem;
+  text-transform: uppercase;
+  position: relative;
+  border: 1px solid #15AD72; }
+  .btn:hover {
+    color: #15AD72;
+    background-color: #FFF;
+    border: 1px solid #15AD72;
+    transition: 0.2s; }
+  .btn--more {
+    padding-right: 3.5rem; }
+    .btn--more::after {
+      font-family: "FontAwesome5Solid";
+      position: absolute;
+      content: '\F101';
+      right: 0.8rem;
+      top: 1rem;
+      padding-right: 0.5rem;
+      padding-left: 1rem; }
+
 /*!
  * Font Awesome Free 5.12.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @font-face {
-  font-family: 'Font Awesome 5 Brands';
+  font-family: 'FontAwesome5Brands';
   font-style: normal;
   font-weight: normal;
   font-display: auto;
@@ -19,14 +59,14 @@
   src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.ttf") format("truetype"), url("../fonts/fa-brands-400.svg#fontawesome") format("svg"); }
 
 .fab {
-  font-family: 'Font Awesome 5 Brands'; }
+  font-family: 'FontAwesome5Brands'; }
 
 /*!
  * Font Awesome Free 5.12.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @font-face {
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'FontAwesome5Solid';
   font-style: normal;
   font-weight: 900;
   font-display: auto;
@@ -35,7 +75,7 @@
 
 .fa,
 .fas {
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'FontAwesome5Solid';
   font-weight: 900; }
 
 /*!
@@ -43,7 +83,7 @@
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @font-face {
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'FontAwesome5Free';
   font-style: normal;
   font-weight: 400;
   font-display: auto;
@@ -51,7 +91,7 @@
   src: url("../fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-regular-400.woff2") format("woff2"), url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.ttf") format("truetype"), url("../fonts/fa-regular-400.svg#fontawesome") format("svg"); }
 
 .far {
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'FontAwesome5Free';
   font-weight: 400; }
 
 /*!
@@ -4466,20 +4506,6 @@ body {
   padding-top: 8rem;
   position: relative; }
 
-a {
-  color: inherit;
-  text-decoration: none; }
-
-a:focus, a:hover {
-  color: inherit;
-  text-decoration: none; }
-
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none !important; }
-
 .main {
   top: 0;
   left: 0;
@@ -4490,7 +4516,7 @@ select {
   min-height: 100vh;
   overflow: hidden;
   display: block;
-  background-color: violet;
+  background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-size: cover;
   background-clip: border-box;
@@ -4501,19 +4527,14 @@ select {
 .header {
   height: 8rem;
   width: 100%;
-  position: fixed;
   top: 0;
-  background-color: #0f1620; }
-  .header__wrapper {
-    width: 100%;
-    max-width: 1200px;
-    height: 100%;
-    margin: 0 auto; }
+  background-color: #1b2026; }
   .header__logo {
     height: 100%;
     padding: 2.5rem 0;
     font-size: 2.2rem; }
   .header__logo-link {
+    display: block;
     height: 100%;
     color: white;
     transition: 0.3s; }
@@ -4526,9 +4547,6 @@ select {
     height: 100%;
     padding: 2.5rem 0; }
 
-.header__logo-link:first-letter {
-  color: #15AD72 !important; }
-
 .navigation {
   color: white; }
   .navigation__list {
@@ -4536,7 +4554,7 @@ select {
   .navigation__item {
     font-family: Verdana, Geneva, sans-serif;
     font-size: 1.4rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
     float: left;
     text-transform: uppercase;
     transition: 0.3s;
@@ -4546,7 +4564,517 @@ select {
       transition: 0.3s; }
 
 .section {
-  width: 100%;
   z-index: 10; }
+  .section__wrapper {
+    height: 100%; }
+  .section--home {
+    background: url("../img/background.jpg") #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 73rem;
+    min-height: 73rem; }
+  .section--sed {
+    background: #FFFFFF;
+    height: 41rem;
+    min-height: 41rem; }
+  .section--dolor {
+    background: url("../img/background-02.jpg") #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 69rem;
+    min-height: 69rem; }
+  .section--massa {
+    background: url("../img/background-03.jpg") #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 39rem;
+    min-height: 39rem; }
+  .section--ante {
+    background: #FFFFFF;
+    height: 65rem;
+    min-height: 65rem; }
+  .section--solli {
+    background: url("../img/background-04.jpg") #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60rem;
+    min-height: 60rem; }
+  .section--amet {
+    background: #FFFFFF;
+    height: 77rem;
+    min-height: 77rem; }
+  .section--contacts {
+    background: #1b2026;
+    height: 45rem;
+    min-height: 45rem; }
+
+.footer {
+  background: #0f1620;
+  color: #a8a7a6;
+  height: 6rem;
+  min-height: 6rem;
+  padding: 2rem 0;
+  box-sizing: border-box;
+  font-family: 'Verdana', 'Geneva', sans-serif;
+  font-size: 1.4rem; }
+  .footer__copyrights {
+    text-align: left; }
+  .footer__link {
+    text-align: right; }
+
+.home {
+  padding: 12% 0;
+  height: 100%;
+  box-sizing: border-box; }
+  .home__content {
+    height: 19.5rem;
+    padding: 5% 5%;
+    background-color: rgba(27, 32, 38, 0.4);
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    color: white; }
+  .home__title {
+    margin: 0;
+    padding: 0;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem; }
+  .home__slogan {
+    font-size: 1.68rem;
+    padding: 8% 0 0 0; }
+
+.sed {
+  height: 100%;
+  padding: 7% 0;
+  box-sizing: border-box; }
+  .sed__wrapper {
+    height: 100%; }
+  .sed__title {
+    font-size: 1.12rem;
+    font-family: "Verdana", "Geneva", sans-serif; }
+  .sed__subtitle {
+    font-size: 2.2rem; }
+  .sed__content {
+    font-size: 1.4rem;
+    font-family: "Verdana", "Geneva", sans-serif;
+    margin-bottom: 2rem; }
+
+.dolor {
+  background-color: rgba(27, 32, 38, 0.55);
+  text-align: center;
+  padding: 5% 0;
+  box-sizing: border-box;
+  color: white; }
+  .dolor__title {
+    margin: 0;
+    padding: 0;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: white; }
+  .dolor__subtitle {
+    font-family: 'Verdana', 'Geneva', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: white;
+    padding: 1rem 0 5rem 0; }
+
+.dolor-card {
+  display: block;
+  color: inherit;
+  text-align: left;
+  padding: 1rem 5rem 1rem 9rem;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 4rem; }
+  .dolor-card__title {
+    margin: 0;
+    padding: 0;
+    font-size: 1.68rem;
+    line-height: 1.68rem;
+    color: white;
+    padding: 0; }
+  .dolor-card__content {
+    font-family: 'Verdana', 'Geneva', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: white;
+    padding: 1rem 1rem 1rem 0;
+    line-height: 2rem; }
+  .dolor-card__link {
+    font-family: 'Verdana', 'Geneva', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #15AD72;
+    padding: 1rem 0;
+    position: relative;
+    padding-right: 2.5rem;
+    cursor: pointer; }
+    .dolor-card__link::after {
+      font-family: "FontAwesome5Solid";
+      position: absolute;
+      content: '\F101';
+      right: 0rem;
+      top: 1.1rem;
+      padding-right: 0.5rem;
+      padding-left: 1rem; }
+  .dolor-card__icon {
+    position: absolute;
+    border: 1px solid #15AD72;
+    color: #15AD72;
+    background-color: transparent;
+    padding: 2rem;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2rem; }
+
+.massa {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 9rem 0; }
+  .massa__title {
+    margin: 0;
+    padding: 0;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    padding-bottom: 2rem; }
+  .massa__subtitle {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    padding-bottom: 2rem;
+    font-family: 'Verdana', 'Geneva', sans-serif; }
+
+.massa-card {
+  display: block; }
+  .massa-card__img {
+    height: 90%;
+    width: 90%; }
+  .massa-card__title {
+    margin: 0;
+    padding: 0;
+    font-size: 1.68rem;
+    line-height: 1.68rem;
+    padding: 2.5rem 0; }
+  .massa-card__link {
+    height: 100%;
+    font-size: 1.68rem;
+    color: #15AD72; }
+
+.solli {
+  background-color: rgba(21, 173, 114, 0.4);
+  text-align: center;
+  padding: 5% 0;
+  box-sizing: border-box;
+  color: white; }
+  .solli__title {
+    margin: 0;
+    padding: 0;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: white; }
+  .solli__subtitle {
+    font-family: 'Verdana', 'Geneva', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: white;
+    padding: 1rem 0 5rem 0; }
+
+.solli-card {
+  display: block;
+  color: inherit;
+  text-align: left;
+  padding: 1rem 5rem 1rem 9rem;
+  box-sizing: border-box; }
+  .solli-card__img {
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    overflow: hidden; }
+  .solli-card__content {
+    display: block;
+    padding: 3rem 2rem 2rem 2rem;
+    background-color: #FFFFFF;
+    color: black;
+    line-height: 2rem;
+    font-size: 1.4rem;
+    font-family: 'Verdana', 'Geneva', sans-serif;
+    position: relative; }
+    .solli-card__content::before {
+      content: '\275D';
+      display: inline-block;
+      position: absolute;
+      color: rgba(0, 0, 0, 0.1);
+      top: 5px;
+      left: 5px;
+      font-size: 7rem;
+      line-height: 7rem;
+      z-index: 0;
+      box-sizing: border-box; }
+  .solli-card__title {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 2.2rem;
+    margin-bottom: 0; }
+  .solli-card__subtitle {
+    font-family: 'Verdana', 'Geneva', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0rem 0 5rem 0; }
+
+.ante {
+  text-align: center;
+  padding: 5% 0;
+  box-sizing: border-box; }
+  .ante__title {
+    margin: 0;
+    padding: 0;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem; }
+  .ante__subtitle {
+    font-family: 'Verdana', 'Geneva', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    padding: 1rem 0 5rem 0; }
+
+.ante-card {
+  padding: 3rem;
+  box-sizing: border-box;
+  text-align: left;
+  height: 100%;
+  min-height: 14rem; }
+  .ante-card__img {
+    height: 100%;
+    width: 100%; }
+  .ante-card__title {
+    margin: 0;
+    padding: 0;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    padding: 2rem 0; }
+  .ante-card__subtitle {
+    font-family: 'Verdana', 'Geneva', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    padding: 1rem 0 1rem 0; }
+  .ante-card__social-block {
+    width: 100%;
+    height: 4.7rem;
+    display: block;
+    box-sizing: border-box; }
+  .ante-card__icons {
+    padding: 1rem;
+    margin-right: 1.36rem;
+    font-size: 1.68rem;
+    background-color: #1b2026;
+    color: white;
+    border: 1px solid #1b2026;
+    transition: 0.2s;
+    display: inline-block; }
+    .ante-card__icons:hover {
+      background-color: white;
+      color: #1b2026;
+      border: 1px solid #1b2026;
+      transition: 0.2s; }
+    .ante-card__icons:last-child {
+      margin-right: 0; }
+    .ante-card__icons--twit {
+      padding: 1rem 1.3rem 1rem 1.3rem; }
+    .ante-card__icons--insta {
+      padding: 1rem 1.4rem 1rem 1.4rem; }
+    .ante-card__icons--gplus {
+      padding: 1rem 1.1rem 1rem 1.2rem; }
+    .ante-card__icons--vk {
+      padding: 1rem 1.2rem 1rem 1.2rem; }
+
+.amet {
+  text-align: center;
+  padding: 5% 0;
+  box-sizing: border-box; }
+  .amet__title {
+    margin: 0;
+    padding: 0;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem; }
+  .amet__subtitle {
+    font-family: 'Verdana', 'Geneva', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    padding: 1rem 0 5rem 0; }
+
+.amet-card {
+  box-sizing: border-box;
+  text-align: left; }
+  .amet-card__img {
+    height: 90%;
+    width: 100%; }
+  .amet-card__content {
+    background-color: #f8f8f8;
+    padding: 0 2rem 2rem; }
+  .amet-card__title {
+    margin: 0;
+    padding: 0;
+    font-size: 1.88rem;
+    font-weight: 300;
+    padding: 2rem 0 0;
+    font-family: "Georgia", "Times New Roman", "Times", serif; }
+  .amet-card__links-block {
+    color: #15AD72;
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    padding: 0 0 2rem; }
+  .amet-card__link {
+    background-color: #f8f8f8;
+    padding: 0 1rem;
+    position: relative; }
+    .amet-card__link:first-child {
+      border-right: 1px solid black;
+      padding-left: 0; }
+    .amet-card__link--admin::before {
+      font-family: "FontAwesome5Solid";
+      content: '\F406';
+      color: black;
+      left: 0rem;
+      top: 0.6rem;
+      font-size: 1rem;
+      padding-right: 0.5rem; }
+    .amet-card__link--label::before {
+      font-family: "FontAwesome5Solid";
+      content: '\F02B';
+      color: black;
+      left: 0rem;
+      top: 0.6rem;
+      font-size: 1rem;
+      padding-right: 0.5rem; }
+  .amet-card__text {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    font-family: 'Verdana','Geneva',sans-serif;
+    margin-bottom: 1rem; }
+  .amet-card__more {
+    color: #15AD72;
+    font-size: 1.4rem;
+    position: relative;
+    padding-right: 2rem; }
+    .amet-card__more::after {
+      font-family: "FontAwesome5Solid";
+      position: absolute;
+      content: '\F101';
+      right: 0rem;
+      top: -0.1rem;
+      padding-right: 0.5rem;
+      padding-left: 1rem; }
+
+.contacts {
+  color: #a8a7a6;
+  padding: 5% 0;
+  box-sizing: border-box; }
+  .contacts__title {
+    margin: 0;
+    padding: 0;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-size: 1.68rem;
+    margin-bottom: 2rem; }
+  .contacts__link {
+    color: #15AD72;
+    font-size: 1.4rem;
+    padding: 2rem 0;
+    font-family: 'Verdana', 'Geneva', sans-serif; }
+    .contacts__link--upper {
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      font-family: 'Georgia', 'Times New Roman', 'Times', serif; }
+  .contacts__date {
+    padding: 0.5rem 0 0.5rem 0;
+    font-size: 1.1rem;
+    line-height: 1rem;
+    margin: 0;
+    font-family: 'Verdana', 'Geneva', sans-serif; }
+  .contacts__text {
+    padding: 0.5rem 0 0.5rem 0;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin: 0;
+    font-family: 'Verdana', 'Geneva', sans-serif; }
+    .contacts__text--adress {
+      padding-left: 3rem;
+      position: relative; }
+      .contacts__text--adress::before {
+        position: absolute;
+        font-family: "FontAwesome5Solid";
+        content: '\F3C5';
+        left: 0rem;
+        top: 0.6rem;
+        font-size: 1rem;
+        padding-right: 0.5rem;
+        font-size: 1.4rem; }
+    .contacts__text--phone {
+      padding-left: 3rem;
+      position: relative; }
+      .contacts__text--phone::before {
+        position: absolute;
+        font-family: "FontAwesome5Solid";
+        content: '\F879';
+        left: 0rem;
+        top: 0.6rem;
+        font-size: 1rem;
+        padding-right: 0.5rem;
+        font-size: 1.4rem; }
+    .contacts__text--email {
+      padding-left: 3rem;
+      position: relative; }
+      .contacts__text--email::before {
+        position: absolute;
+        font-family: "FontAwesome5Solid";
+        content: '\F0E0';
+        left: 0rem;
+        top: 0.6rem;
+        font-size: 1rem;
+        padding-right: 0.5rem;
+        font-size: 1.4rem; }
+  .contacts__input {
+    width: 100%;
+    height: 4rem;
+    background-color: #0f1620;
+    border: 1px solid #0f1620;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1.68rem;
+    font-family: 'Verdana', 'Geneva', sans-serif; }
+    .contacts__input:focus {
+      outline: none !important;
+      border: 1px solid #15AD72;
+      box-shadow: 0 0 3px #15AD72; }
+  .contacts__submit {
+    background-color: #15AD72;
+    color: white;
+    text-transform: uppercase; }
+  .contacts__block {
+    display: block;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+    .contacts__block:last-child {
+      border-bottom: none; }
 
 /*# sourceMappingURL=index.css.map*/

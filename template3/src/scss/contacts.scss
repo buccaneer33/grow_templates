@@ -1,0 +1,117 @@
+.contacts{
+    color: $footer-color;
+    padding: 5% 0;
+    box-sizing: border-box;
+
+    @include element(title) {
+        @include header1;
+        color: $body-color-light;
+        font-size: 1.68rem;
+        margin-bottom: 2rem;
+    }
+    @include element(link) {
+        color: $nav-color-active;
+        font-size: 1.4rem;
+        padding: 2rem 0;
+        font-family: 'Verdana', 'Geneva', sans-serif;
+
+        @include modif(upper) {
+            text-transform: uppercase;
+            font-size: 1.8rem;
+            font-family: 'Georgia', 'Times New Roman', 'Times', serif;
+        }
+    }
+    @include element(date) {
+        padding: 0.5rem 0 0.5rem 0;
+        font-size: 1.1rem;
+        line-height: 1rem;
+        margin: 0;
+        font-family: 'Verdana', 'Geneva', sans-serif;
+    }
+    @include element(text) {
+        padding: 0.5rem 0 0.5rem 0;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin: 0;
+        font-family: 'Verdana', 'Geneva', sans-serif;
+
+        @include modif(adress) {
+            padding-left: 3rem;
+            position: relative;
+
+            &::before{
+                position: absolute;
+                font-family: "FontAwesome5Solid";
+                content: '\f3c5';
+                left: 0rem;
+                top: 0.6rem;
+                font-size: 1rem;
+                padding-right: 0.5rem;
+                font-size: 1.4rem;
+            }
+        }
+        @include modif(phone) {
+            padding-left: 3rem;
+            position: relative;
+
+            &::before{
+                position: absolute;
+                font-family: "FontAwesome5Solid";
+                content: '\f879';
+                left: 0rem;
+                top: 0.6rem;
+                font-size: 1rem;
+                padding-right: 0.5rem;
+                font-size: 1.4rem;
+            }
+        }
+        @include modif(email) {
+            padding-left: 3rem;
+            position: relative;
+
+            &::before{
+                position: absolute;
+                font-family: "FontAwesome5Solid";
+                content: '\f0e0';
+                left: 0rem;
+                top: 0.6rem;
+                font-size: 1rem;
+                padding-right: 0.5rem;
+                font-size: 1.4rem;
+            }
+        }
+    }
+    @include element(form) {
+
+    }
+    @include element(input) {
+        width: 100%;
+        height: 4rem;
+        background-color: $footer-bgc-color;
+        border: 1px solid $footer-bgc-color;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        font-size: 1.68rem;
+        font-family: 'Verdana', 'Geneva', sans-serif;
+
+        &:focus {
+            outline: none !important;
+            border:1px solid $nav-color-active;
+            box-shadow: 0 0 3px $nav-color-active;
+        }
+    }
+    @include element(submit) {
+        background-color: $button-bgc-color;
+        color: $body-color-light;
+        text-transform: uppercase;
+    }
+    @include element(block) {
+        display: block;
+        padding: 1rem 0;
+        border-bottom: 1px solid $footer-border-color;
+
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+}

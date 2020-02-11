@@ -1,6 +1,59 @@
 .section{
-    width: 100%;
     z-index: 10;
 
-
+    @include element(wrapper) {
+        height: 100%;
+    }
+    @include modif(home) {
+        background: url('../img/background.jpg') $body-bgc-color;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 73rem;
+        min-height: 73rem;
+    }
+    @include modif(sed) {
+        background: $body-bgc-color;
+        height: 41rem;
+        min-height: 41rem;
+    }
+    @include modif(dolor) {
+        background: url('../img/background-02.jpg') $body-bgc-color;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 69rem;
+        min-height: 69rem;
+    }
+    @include modif(massa) {
+        background: url('../img/background-03.jpg') $body-bgc-color;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 39rem;
+        min-height: 39rem;
+    }
+    @include modif(ante) {
+        background: $body-bgc-color;
+        height: 65rem;
+        min-height: 65rem;
+    }
+    @include modif(solli) {
+        background: url('../img/background-04.jpg') $body-bgc-color;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 60rem;
+        min-height: 60rem;
+    }
+    @include modif(amet) {
+        background: $body-bgc-color;
+        height: 77rem;
+        min-height: 77rem;
+    }
+    @include modif(contacts) {
+        background: $body-bgc-color-dark;
+        height: 45rem;
+        min-height: 45rem;
+    }
 }
