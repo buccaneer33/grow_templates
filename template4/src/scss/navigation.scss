@@ -1,0 +1,21 @@
+.navigation{
+    //color: $body-color-light;
+
+    @include element(list) {
+        list-style: none;
+    }
+    @include element(item) {
+        font-family:Verdana, Geneva, sans-serif;
+        font-size: 1.4rem;
+        margin-right: 2rem;
+        float: left;
+        text-transform: uppercase;
+        //transition: $transition-time;
+        cursor: pointer;
+
+        &:hover{
+            //color: $nav-color-active;
+            //transition: $transition-time;
+        }
+    }
+}

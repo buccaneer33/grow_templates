@@ -1,0 +1,15 @@
+.section{
+    z-index: 10;
+
+    @include element(wrapper) {
+        height: 100%;
+    }
+    @include modif(home) {
+        //background: url('../img/background.jpg') $body-bgc-color;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 73rem;
+        min-height: 73rem;
+    }
+}
