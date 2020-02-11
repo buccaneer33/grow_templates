@@ -1,0 +1,17 @@
+.dolor{
+    background-color: $overlay-dolor-color;
+    text-align: center;
+    padding: 5% 0;
+    box-sizing: border-box;
+    color: $body-color-light;
+
+    @include element(title) {
+        @include header1;
+        color: $body-color-light;
+    }
+    @include element(subtitle) {
+        @include subtitle;
+        color: $body-color-light;
+        padding: 1rem 0 5rem 0;
+    }
+}

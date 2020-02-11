@@ -1,0 +1,79 @@
+.amet-card{
+    box-sizing: border-box;
+    text-align: left;
+
+    @include element(img) {
+        height: 90%;
+        width: 100%;
+    }
+    @include element(content) {
+        background-color: $card-bgc-gray;
+        padding: 0 2rem 2rem;
+    }
+    @include element(title) {
+        @include header2;
+        padding: 2rem 0 0;
+        font-family: "Georgia", "Times New Roman", "Times", serif;
+    }
+    @include element(links-block) {
+        color: $nav-color-active;
+        font-size: 1.1rem;
+        line-height: 2.2rem;
+        padding: 0 0 2rem;
+    }
+    @include element(link) {
+        background-color: $card-bgc-gray;
+        padding: 0 1rem;
+        position: relative;
+
+        &:first-child{
+            border-right: 1px solid $body-color-black;
+            padding-left: 0;
+        }
+        @include modif(admin) {
+            &::before{
+                font-family: "FontAwesome5Solid";
+                content: '\f406';
+                color: $body-color-black;
+                left: 0rem;
+                top: 0.6rem;
+                font-size: 1rem;
+                padding-right: 0.5rem;
+            }
+        }
+        @include modif(label) {
+            &::before{
+                font-family: "FontAwesome5Solid";
+                content: '\f02b';
+                color: $body-color-black;
+                left: 0rem;
+                top: 0.6rem;
+                font-size: 1rem;
+                padding-right: 0.5rem;
+            }
+        }
+    }
+    @include element(text) {
+        margin: 0;
+        padding: 0;
+        font-size: 1.4rem;
+        font-family: 'Verdana','Geneva',sans-serif;
+        margin-bottom: 1rem;
+    }
+    @include element(more) {
+        color: $nav-color-active;
+        font-size: 1.4rem;
+        position: relative;
+        padding-right: 2rem;
+
+        &::after{
+            font-family: "FontAwesome5Solid";
+            position: absolute;
+            content: '\f101';
+            right: 0rem;
+            top: -0.1rem;
+            padding-right: 0.5rem;
+            padding-left: 1rem;
+        }
+    }
+}

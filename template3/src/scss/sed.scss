@@ -1,0 +1,21 @@
+.sed {
+    height: 100%;
+    padding: 7% 0;
+    box-sizing: border-box;
+
+    @include element(wrapper) {
+        height: 100%;
+    }
+    @include element(title) {
+        font-size: 1.12rem;
+        font-family: "Verdana", "Geneva", sans-serif;
+    }
+    @include element(subtitle) {
+        font-size: 2.2rem;
+    }
+    @include element(content) {
+        font-size: 1.4rem;
+        font-family: "Verdana", "Geneva", sans-serif;
+        margin-bottom: 2rem;
+    }
+}

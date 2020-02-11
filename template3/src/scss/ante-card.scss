@@ -1,0 +1,58 @@
+.ante-card{
+    padding: 3rem;
+    box-sizing: border-box;
+    text-align: left;
+    height: 100%;
+    min-height: 14rem;
+
+    @include element(img) {
+        height: 100%;
+        width: 100%;
+    }
+    @include element(title) {
+        @include header1;
+        padding: 2rem 0;
+    }
+    @include element(subtitle) {
+        @include subtitle;
+        padding: 1rem 0 1rem 0;
+    }
+    @include element(social-block) {
+        width: 100%;
+        height: 4.7rem;
+        display: block;
+        box-sizing: border-box;
+    }
+    @include element(icons) {
+        padding: 1rem;
+        margin-right: 1.36rem;
+        font-size: $title-font-size;
+        background-color: $body-bgc-color-dark;
+        color: $body-color-light;
+        border: 1px solid $body-bgc-color-dark;
+        transition: 0.2s;
+        display: inline-block;
+
+        &:hover{
+            background-color: $body-color-light;
+            color: $body-bgc-color-dark;
+            border: 1px solid $body-bgc-color-dark;
+            transition: 0.2s;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+        @include modif(twit) {
+            padding: 1rem 1.3rem 1rem 1.3rem;
+        }
+        @include modif(insta) {
+            padding: 1rem 1.4rem 1rem 1.4rem;
+        }
+        @include modif(gplus) {
+            padding: 1rem 1.1rem 1rem 1.2rem;
+        }
+        @include modif(vk) {
+            padding: 1rem 1.2rem 1rem 1.2rem;
+        }
+    }
+}

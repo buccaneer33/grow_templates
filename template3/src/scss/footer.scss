@@ -1,0 +1,17 @@
+.footer{
+    background: $footer-bgc-color;
+    color: $footer-color;
+    height: 6rem;
+    min-height: 6rem;
+    padding: 2rem 0;
+    box-sizing: border-box;
+    font-family: 'Verdana', 'Geneva', sans-serif;
+    font-size: 1.4rem;
+
+    @include element(copyrights) {
+        text-align: left;
+    }
+    @include element(link) {
+        text-align: right;
+    }
+}
