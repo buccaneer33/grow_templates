@@ -1,0 +1,17 @@
+.massa-card{
+    display: block;
+
+    @include element(img) {
+        height: 90%;
+        width: 90%;
+    }
+    @include element(title) {
+        @include header4;
+        padding: 2.5rem 0;
+    }
+    @include element(link) {
+        height: 100%;
+        font-size: $title-font-size;
+        color: $nav-color-active;
+    }
+}

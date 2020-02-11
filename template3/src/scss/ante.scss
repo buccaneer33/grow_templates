@@ -1,0 +1,13 @@
+.ante{
+    text-align: center;
+    padding: 5% 0;
+    box-sizing: border-box;
+
+    @include element(title) {
+        @include header1;
+    }
+    @include element(subtitle) {
+        @include subtitle;
+        padding: 1rem 0 5rem 0;
+    }
+}

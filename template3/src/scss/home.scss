@@ -1,0 +1,21 @@
+.home {
+    padding: 12% 0;
+    height: 100%;
+    box-sizing: border-box;
+
+    @include element(content) {
+        height: 19.5rem;
+        padding: 5% 5%;
+        background-color: $overlay-bgc-color;
+        box-sizing: border-box;
+        margin-bottom: 2rem;
+        color: $body-color-light;
+    }
+    @include element(title) {
+        @include header1;
+    }
+    @include element(slogan) {
+        font-size:1.68rem;
+        padding: 8% 0 0 0;
+    }
+}

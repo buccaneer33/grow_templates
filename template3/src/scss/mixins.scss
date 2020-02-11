@@ -1,0 +1,77 @@
+@mixin element ($element) {
+    &__#{$element} {
+        @content;
+    };
+};
+
+@mixin modif ($modif) {
+    &--#{$modif} {
+        @content;
+    };
+};
+
+@mixin header1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+
+@mixin header2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.88rem;
+    font-weight: 300;
+}
+
+@mixin header3 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.6rem;
+    line-height: 2.8rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+}
+@mixin header4 {
+    margin: 0;
+    padding: 0;
+    font-size: $title-font-size;
+    line-height: $title-font-size;
+}
+@mixin header5 {
+    margin: 0;
+    padding: 0;
+    font-size: 0.88rem;
+    line-height: 0.88rem;
+    letter-spacing: 2px;
+}
+@mixin subtitle {
+    font-family: 'Verdana', 'Geneva', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+@mixin container-wrapper {
+    width: 100%;
+    max-width: $wrapper-width;
+    height: 100%;
+    margin: 0 auto;
+}
+@mixin button {
+    color: $button-color;
+    background-color: $button-bgc-color;
+    transition: 0.2s;
+    border-radius: 0;
+    padding: 1rem 1.8rem;
+    text-transform: uppercase;
+    position: relative;
+    border: 1px solid $button-bgc-color;
+
+    &:hover{
+        color: $button-bgc-color;
+        background-color: $button-color;
+        border: 1px solid $button-bgc-color;
+        transition: 0.2s;
+    }
+}

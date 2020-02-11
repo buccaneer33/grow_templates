@@ -1,0 +1,15 @@
+.massa {
+    background-color: $overlay-massa-color;
+    padding: 9rem 0;
+
+    @include element(title) {
+        @include header1;
+        padding-bottom: 2rem;
+    }
+    @include element(subtitle) {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        padding-bottom: 2rem;
+        font-family: 'Verdana', 'Geneva', sans-serif;
+    }
+}

@@ -1,0 +1,49 @@
+.solli-card{
+    display: block;
+    color: inherit;
+    text-align: left;
+    padding: 1rem 5rem 1rem 9rem;
+    box-sizing: border-box;
+
+    @include element(img) {
+        height: 20%;
+        width: 20%;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+        overflow: hidden;
+    }
+    @include element(content) {
+        display: block;
+        padding: 3rem 2rem 2rem 2rem;
+        background-color: $body-bgc-color;
+        color: $body-color-black;
+        line-height: 2rem;
+        font-size: 1.4rem;
+        font-family: 'Verdana', 'Geneva', sans-serif;
+        position: relative;
+
+        &::before{
+            content: '❝';
+            display: inline-block;
+            position: absolute;
+            color: rgba(0,0,0,.1);
+            top: 5px;
+            left: 5px;
+            font-size: 7rem;
+            line-height: 7rem;
+            z-index: 0;
+            box-sizing: border-box;
+        }
+    }
+    @include element(title) {
+        font-family: "Georgia", "Times New Roman", serif;
+        font-size: 2.2rem;
+        margin-bottom: 0;
+    }
+    @include element(subtitle) {
+        @include subtitle;
+        color: $body-color-light;
+        font-size: 1.1rem;
+        padding: 0rem 0 5rem 0;
+    }
+}
