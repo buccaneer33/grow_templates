@@ -1,0 +1,24 @@
+'use strict';
+import '../../assets/icons/favicon.ico';
+import '../../assets/icons/favicon.png';
+
+import '../../assets/img/logo-seo.png';
+import '../../assets/img/parallax_12.jpg';
+import '../../assets/img/rocket.png';
+import '../../assets/img/about_01.jpg';
+import '../../assets/img/development.svg';
+import '../../assets/img/growth.svg';
+import '../../assets/img/pattern.png';
+import '../../assets/img/research.svg';
+import '../../assets/img/seo_01.png';
+import '../../assets/img/seo_02.png';
+import '../../assets/img/seo_03.png';
+import '../../assets/img/seo_04.png';
+import '../../assets/img/seo_05.png';
+import '../../assets/img/seo_06.png';
+import '../../assets/img/stopwatch.svg';
+import '../../assets/img/testi_01.png';
+import '../../assets/img/version_01.jpg';
+import '../../assets/img/version_02.jpg';
+import '../../assets/img/version_03.jpg';
+import '../../assets/img/version_04.jpg';

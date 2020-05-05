@@ -1,0 +1,19 @@
+.interesting {
+    height: 100%;
+
+    @include element(block) {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @include element(link) {
+        @include header3;
+        font-size: 1.3rem;
+        color: $body-color-light;
+
+        &:hover{
+            color: $body-color-light;
+        }
+    }
+}

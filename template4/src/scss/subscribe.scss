@@ -1,0 +1,23 @@
+.subscribe {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include element(input) {
+        width: 100%;
+        position: relative;
+        padding: 0.2rem;
+        background-color: $content-border-color;
+        border: 1px solid $content-border-color;
+        font-size: 0.8rem;
+    }
+    &::after {
+        position: absolute;
+        font-family: "FontAwesome5Solid";
+        content: '\f0e0';
+        right: 0.1rem;
+        font-size: 1rem;
+        padding-right: 1rem;
+    }
+}

@@ -1,0 +1,47 @@
+.projects {
+    height: 100%;
+    padding: 3rem 0;
+
+    @include element(card) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 1rem;
+        background-color: transparent;
+        border: none;
+    }
+    @include element(card-img) {
+        width: 6rem;
+        height: 6rem;
+        font-size: 4rem;
+        background-color: $body-color-black;
+        color: $body-bgc-color;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        transition: 0.2s;
+        border-radius: 0;
+
+        &:hover{
+            background-color: $nav-bgc-active;
+            transition: 0.2s;
+            box-shadow: 0 0 0 2px #121212;
+            padding: 7px;
+            transform: scale(1);
+            opacity: 1;
+            padding: 7px;
+            transition: transform 0.2s,
+            opacity 0.2;
+        }
+    }
+    @include element(card-title) {
+        text-align: center;
+        @include header3;
+    }
+    @include element(card-text) {
+        text-align: center;
+        @include section-content;
+    }
+}

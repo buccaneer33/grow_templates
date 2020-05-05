@@ -1,0 +1,28 @@
+.message-box {
+
+    @include element(sub-header) {
+        @include header4;
+    }
+
+    @include element(header) {
+        @include header2;
+    }
+    @include element(content) {
+        @include section-content;
+        font-style: italic;
+        font-weight: 400;
+        padding: 1rem 0;
+    }
+    @include element(skills-header) {
+        @include section-content;
+        font-weight: 400;
+        padding: 1rem 0;
+        font-size: 0.8rem;
+    }
+    @include element(progress-block) {
+        height: 5px;
+    }
+    @include element(progress-bar) {
+        height: 5px;
+    }
+}

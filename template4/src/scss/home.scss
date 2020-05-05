@@ -1,0 +1,33 @@
+.home {
+    color: $body-color-light;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+
+    @include element (column){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0;
+
+        @include modif(rocket) {
+            position: absolute;
+            bottom: -16%;
+            right: 0;
+        }
+    }
+    @include element(header) {
+        @include header1;
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+    }
+    @include element(slogan) {
+        @include subtitle;
+        padding: 1rem 0;
+    }
+}

@@ -1,0 +1,155 @@
+@mixin element ($element) {
+    &__#{$element} {
+        @content;
+    };
+};
+
+@mixin modif ($modif) {
+    &--#{$modif} {
+        @content;
+    };
+};
+
+@mixin header1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    font-family: Ubuntu-Bold sans-serif;
+    font-weight: 700;
+}
+
+@mixin header2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.35rem;
+    font-weight: 300;
+    font-family: Ubuntu-Medium sans-serif;
+    color: $body-color-black;
+    font-weight: 600;
+}
+
+@mixin header3 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.6rem;
+    line-height: 2.8rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    font-family: Ubuntu-Medium sans-serif;
+}
+@mixin header4 {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: Ubuntu-Medium sans-serif;
+    color: $content-color-grey;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+@mixin header5 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Ubuntu-Medium sans-serif;
+    color: $body-color-black;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+@mixin subtitle {
+    font-family: Ubuntu-Medium sans-serif;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+@mixin wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: $wrapper-width;
+}
+@mixin nav-button {
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+    font-family: Ubuntu-Medium, sans-serif;
+    border-radius: 1.2rem;
+    transition: $transition-time;
+}
+@mixin section-content {
+    font-size: 1rem;
+    font-family: Ubuntu-Medium, sans-serif;
+    color: $content-color-grey;
+    text-align: center;
+}
+@mixin section-block {
+    height: 100%;
+    padding: 3rem 0;
+
+    @include element(content-block) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    @include element(sub-header) {
+        @include header4;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    @include element(header) {
+        @include header2;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    @include element(content) {
+        width: 100%;
+        @include section-content;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    @include element(card) {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    @include element(card-title) {
+        @include header5;
+    }
+    @include element(card-text) {
+        @include section-content;
+        font-family: Ubuntu-Light sans-serif;
+        font-weight: 500;
+        padding: 0.5rem 0;
+        color: $card-content-color;
+    }
+}
+@mixin contacts-column {
+
+    @include element(title) {
+        @include header2;
+        width: 100%;
+        text-align: left;
+        padding: 1rem 0;
+        color: $nav-bgc-active;
+        text-align: center;
+        background-color: transparent;
+        position: relative;
+        border: none;
+    }
+    @include element(content) {
+        width: 100%;
+        @include section-content;
+        text-align: left;
+        padding: 1rem 0;
+        color: $content-color-grey;
+    }
+}

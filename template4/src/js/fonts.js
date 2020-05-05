@@ -1,0 +1,20 @@
+'use strict';
+// awesome
+import '../../assets/fonts/awesome/fa-brands-400.eot';
+import '../../assets/fonts/awesome/fa-brands-400.ttf';
+import '../../assets/fonts/awesome/fa-brands-400.woff';
+import '../../assets/fonts/awesome/fa-brands-400.woff2';
+
+import '../../assets/fonts/awesome/fa-regular-400.eot';
+import '../../assets/fonts/awesome/fa-regular-400.ttf';
+import '../../assets/fonts/awesome/fa-regular-400.woff';
+import '../../assets/fonts/awesome/fa-regular-400.woff2';
+
+import '../../assets/fonts/awesome/fa-solid-900.eot';
+import '../../assets/fonts/awesome/fa-solid-900.ttf';
+import '../../assets/fonts/awesome/fa-solid-900.woff';
+import '../../assets/fonts/awesome/fa-solid-900.woff2';
+
+import '../../assets/fonts/Ubuntu-Medium.ttf';
+import '../../assets/fonts/Ubuntu-Bold.ttf';
+import '../../assets/fonts/Ubuntu-Light.ttf';
