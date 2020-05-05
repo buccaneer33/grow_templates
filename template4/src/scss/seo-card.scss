@@ -1,0 +1,30 @@
+.seo-card {
+
+    &:hover .seo-card__img {
+        border: 2px solid $body-color-black;
+        transition: 0.2s;
+    }
+
+    @include element(img) {
+        display: block;
+        max-width: 120px;
+        max-height: 120px;
+        width: 50%;
+        height: 50%;
+        border: 2px solid $content-border-color;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 0%;
+        transition: 0.2s;
+    }
+    @include element(header) {
+        @include header5;
+    }
+    @include element(content) {
+        @include section-content;
+        font-family: Ubuntu-Light sans-serif;
+        font-weight: 500;
+        padding: 0.5rem 0;
+        color: $card-content-color;
+    }
+}

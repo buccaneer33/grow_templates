@@ -13,7 +13,6 @@ select{
     appearance: none !important;
 }
 .btn {
-    @include button;
 
     @include modif(more) {
         padding-right: 3.5rem;
@@ -27,5 +26,14 @@ select{
             padding-right: 0.5rem;
             padding-left: 1rem;
         }
+    }
+}
+.card {
+    @include modif(basic) {
+        padding: 1rem 0;
+        margin: 1rem 0;
+        box-shadow: 0 0 15px rgba(0,0,0,0.14);
+        cursor: pointer;
+        box-sizing: border-box;
     }
 }

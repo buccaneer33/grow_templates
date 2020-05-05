@@ -1,34 +1,81 @@
 .header {
-    //height: $header-height;
+    height: $header-height;
     width: 100%;
     top: 0;
-    //background-color: $body-bgc-color-dark;
+    background-color: $header-bgc-color;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
     @include element(wrapper) {
-        
+        @include wrapper;
     }
     @include element(logo) {
         height: 100%;
-        padding: 2.5rem 0;
-        font-size: 2.2rem;
+        width: 10rem;
     }
     @include element(logo-link) {
         display: block;
         height: 100%;
-        //color: $body-color-light;
-        //transition: $transition-time;
-
-        &:hover{
-            //color: $nav-color-active;
-            //transition: $transition-time;
-        }
-        &:first-letter{
-            //color: $nav-color-active !important;
-        }
+        width: 100%;
+        background: url('../img/logo-seo.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
     }
 
-    @include element(nav) {
+    @include element(navbar) {
         height: 100%;
         padding: 2.5rem 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        flex-grow: 10;
+    }
+    @include element(nav) {
+        justify-content: flex-end;
+        width: 100%;
+    }
+    @include element(nav-item) {
+        padding: 0.5rem 1rem;
+    }
+    @include element(nav-link) {
+        @include nav-button;
+
+        @include modif(active) {
+            background-color: $nav-bgc-active;
+            color: $nav-color-active;
+            transition: $transition-time;
+        }
+        &:hover{
+            background-color: $nav-bgc-active;
+            color: $nav-color-active;
+            transition: $transition-time;
+        }
+    }
+    @include element(seo-button) {
+        @include nav-button;
+        padding: 0.5rem 1.3rem 0.5rem 2.5rem;
+        background-color: $nav-bgc-active;
+        border: 2px solid $nav-bgc-active;
+        color: $nav-color-active;
+        position: relative;
+
+        &::before{
+            position: absolute;
+            font-family: "FontAwesome5Solid";
+            content: '\f054\f054';
+            left: 1rem;
+            font-size: 1rem;
+            padding-right: 0.5rem;
+        }
+        &:hover{
+            border: 2px solid $nav-bgc-active;
+            background-color: $nav-color-active;
+            color: $nav-bgc-active;
+            transition: $transition-time;
+        }
     }
 }

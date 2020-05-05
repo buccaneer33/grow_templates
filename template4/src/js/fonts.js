@@ -16,3 +16,5 @@ import '../../assets/fonts/awesome/fa-solid-900.woff';
 import '../../assets/fonts/awesome/fa-solid-900.woff2';
 
 import '../../assets/fonts/Ubuntu-Medium.ttf';
+import '../../assets/fonts/Ubuntu-Bold.ttf';
+import '../../assets/fonts/Ubuntu-Light.ttf';

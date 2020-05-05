@@ -2,14 +2,77 @@
     z-index: 10;
 
     @include element(wrapper) {
-        height: 100%;
+        @include wrapper;
     }
     @include modif(home) {
-        //background: url('../img/background.jpg') $body-bgc-color;
+        background: url('../img/parallax_12.jpg') $body-bgc-color;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        height: 73rem;
-        min-height: 73rem;
+        height: 41rem;
+        min-height: 41rem;
+        overflow: hidden;
+        position: relative;
+    }
+    @include modif(about) {
+        background-color: $body-bgc-color;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        // height: 71rem;
+        //min-height: 71rem;
+    }
+    @include modif(interesting) {
+        background-color: $body-color-black;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 11rem;
+        min-height: 11rem;
+        transition: 0.2s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $nav-bgc-active;
+            transition: 0.2s;
+        }
+    }
+    @include modif(services) {
+        background-color: $content-border-color;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    @include modif(study) {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    @include modif(projects) {
+        background-color: $content-border-color;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    @include modif(pricing) {
+        background: url('../img/pattern.png') $body-bgc-color;
+        background-repeat: repeat;
+        position: relative;
+
+        &::before{
+            content: " ";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            top: 0;
+            left: 0;
+        }
+    }
+    @include modif(contacts) {
+        background-color: $body-bgc-color;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 }

@@ -8,11 +8,11 @@
     min-height: 100vh;
     overflow: hidden;
     display: block;
-    //background-color: $body-bgc-color;
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: border-box;
     background-attachment: fixed;
     z-index: 1;
     box-sizing: content-box;
+    margin-top: 128px;
 }

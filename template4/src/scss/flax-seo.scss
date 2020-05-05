@@ -1,0 +1,32 @@
+.flax-seo {
+    @include contacts-column;
+    border: none;
+
+    @include element(header) {
+        width: 100%;
+        position: relative;
+        padding: 1rem 0;
+        background-color: transparent;
+        border: none;
+    }
+    @include element(img) {
+
+    }
+    @include element(subtitle) {
+        position: absolute;
+        top: 64%;
+        left: 27%;
+        font-size: 0.8rem;
+        color: $nav-bgc-active;
+        text-transform: uppercase;
+        font-family: Ubuntu-Medium sans-serif;
+    }
+    @include element(body) {
+        @include section-content;
+        font-family: Ubuntu-Light sans-serif;
+        font-weight: 500;
+        padding: 0.5rem 0;
+        color: $card-content-color;
+        text-align: left;
+    }
+}

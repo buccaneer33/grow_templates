@@ -1,0 +1,107 @@
+.social {
+    @include contacts-column;
+    font-size: 1rem;
+    text-align: left;
+    border: none;
+
+    @include element(item) {
+        margin: 0.5rem 0;
+        height: 2rem;
+        padding: 0.2rem 0.5rem 0.2rem 2rem;
+        color: $body-color-light;
+        font-family: Ubuntu-Light sans-serif;
+        font-weight: 500;
+        cursor: pointer;
+
+        @include modif(facebook) {
+            background-color: $social-facebook-background;
+            transition: 0.2s;
+
+            &:hover {
+                background-color: $nav-bgc-active;
+                transition: 0.2s;
+            }
+            &::before{
+                position: absolute;
+                font-family: "FontAwesome5Brands";
+                content: '\f39e';
+                top: 0.2rem;
+                left: 0.5rem;
+                font-size: 1rem;
+                padding-right: 1rem;
+            }
+        }
+        @include modif(github) {
+            background-color: $social-github-background;
+            transition: 0.2s;
+
+            &:hover {
+                background-color: $nav-bgc-active;
+                transition: 0.2s;
+            }
+            &::before{
+                position: absolute;
+                font-family: "FontAwesome5Brands";
+                content: '\f09b';
+                top: 0.2rem;
+                left: 0.5rem;
+                font-size: 1rem;
+                padding-right: 1rem;
+            }
+        }
+        @include modif(twitter) {
+            background-color: $social-twitter-background;
+            transition: 0.2s;
+
+            &:hover {
+                background-color: $nav-bgc-active;
+                transition: 0.2s;
+            }
+            &::before{
+                position: absolute;
+                font-family: "FontAwesome5Brands";
+                content: '\f099';
+                top: 0.2rem;
+                left: 0.5rem;
+                font-size: 1rem;
+                padding-right: 1rem;
+            }
+        }
+        @include modif(dribble) {
+            background-color: $social-dribble-background;
+            transition: 0.2s;
+
+            &:hover {
+                background-color: $nav-bgc-active;
+                transition: 0.2s;
+            }
+            &::before{
+                position: absolute;
+                font-family: "FontAwesome5Solid";
+                content: '\f434';
+                top: 0.2rem;
+                left: 0.5rem;
+                font-size: 1rem;
+                padding-right: 1rem;
+            }
+        }
+        @include modif(pinterest) {
+            background-color: $social-pinterest-background;
+            transition: 0.2s;
+
+            &:hover {
+                background-color: $nav-bgc-active;
+                transition: 0.2s;
+            }
+            &::before{
+                position: absolute;
+                font-family: "FontAwesome5Brands";
+                content: '\f0d2';
+                top: 0.2rem;
+                left: 0.5rem;
+                font-size: 1rem;
+                padding-right: 1rem;
+            }
+        }
+    }
+}

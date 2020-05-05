@@ -1,0 +1,146 @@
+.pricing{
+    @include section-block;
+
+    @include element(sub-header) {
+        color: $body-color-light;
+    }
+
+    @include element(header) {
+        color: $body-color-light;
+    }
+    @include element(content) {
+        color: $body-color-light;
+    }
+
+    @include element(card) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        border-radius: 0;
+    }
+    @include element(card-header) {
+        width: 100%;
+        border-radius: 3rem 0 3rem 1.5rem !important;
+        background-color: $nav-bgc-active;
+        padding: 1.5rem 0;
+        transition: 0.2s;
+
+        &:hover{
+            background-color: $body-color-black;
+            transition: 0.2s;
+        }
+    }
+    @include element(card-body) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @include element(card-title) {
+        font-size: 1.8rem;
+        text-transform: none;
+        font-family: Ubuntu-Medium sans-serif;
+        color: $body-color-light;
+    }
+    @include element(card-text) {
+        color: $body-color-light;
+        text-transform: uppercase;
+        font-family: Ubuntu-Medium sans-serif;
+    }
+    @include element(card-content) {
+        color: $nav-color;
+        font-family: Ubuntu-Medium sans-serif;
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+    @include element(card-list) {
+
+    }
+    @include element(card-item) {
+        position: relative;
+        padding: 1rem 2rem 1rem 4rem;
+        color: $nav-color;
+        font-size: 1rem;
+        font-family: Ubuntu-Medium sans-serif;
+
+        & b {
+            color: $body-color-black;
+            padding: 0 0.6rem;
+        }
+
+        @include modif(email) {
+            &::before{
+                position: absolute;
+                font-family: "FontAwesome5Solid";
+                content: '\f0e0';
+                top: 1rem;
+                left: 2rem;
+                font-size: 1rem;
+                border-right: 1px solid $nav-color;
+                padding-right: 1rem;
+            }
+        }
+        @include modif(storage) {
+            &::before{
+                position: absolute;
+                font-family: "FontAwesome5Solid";
+                content: '\f135';
+                top: 1rem;
+                left: 2rem;
+                font-size: 1rem;
+                border-right: 1px solid $nav-color;
+                padding-right: 1rem;
+            }
+        }
+        @include modif(database) {
+            &::before{
+                position: absolute;
+                font-family: "FontAwesome5Solid";
+                content: '\f1c0';
+                top: 1rem;
+                left: 2rem;
+                font-size: 1rem;
+                border-right: 1px solid $nav-color;
+                padding-right: 1rem;
+            }
+        }
+        @include modif(domains) {
+            &::before{
+                position: absolute;
+                font-family: "FontAwesome5Solid";
+                content: '\f0c1';
+                top: 1rem;
+                left: 2rem;
+                font-size: 1rem;
+                border-right: 1px solid $nav-color;
+                padding-right: 1rem;
+            }
+        }
+        @include modif(support) {
+            &::before{
+                position: absolute;
+                font-family: "FontAwesome5Solid";
+                content: '\f1cd';
+                top: 1rem;
+                left: 2rem;
+                font-size: 1rem;
+                border-right: 1px solid $nav-color;
+                padding-right: 1rem;
+            }
+        }
+    }
+    @include element(button) {
+        background-color: $nav-bgc-active;
+        border-radius: 0;
+        color: $body-color-light;
+        margin-top: 2rem;
+        transition: 0.2s;
+
+        &:hover{
+            transition: 0.2s;
+            background-color: $body-color-black;
+            color: $body-color-light;
+        }
+    }
+}
